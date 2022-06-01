@@ -46,8 +46,8 @@ When you are finished, please upload your completed work to your Github and invi
 
 Please take some time to answer the following questions. Your answers should go directly in this `readme`.
 
-- Given more time, what would you suggest for improving the performance of this app?
+- Q: Given more time, what would you suggest for improving the performance of this app? A: I think the first stab would be to work on the input change events call quantity and specifically debouncing the onChange. This should help by not requiring the expensive repaint of all of the list items each time the user types something.
 
-- Is there anything you would consider doing if we were to go live with this app?
+- Q: Is there anything you would consider doing if we were to go live with this app? A: This is a good question, there's definitely a lot of stuff. In terms of quick wins, I'd take some time to add some tests one way or another - be it from React Testing Library or maybe Cypress depending on where things go. In addition, though it's arguably not totally my place as a dev, I'd like to have discussions with product: the styling sitution I think could use some work as the user experience would suffer in the current form. To aid the UX situation, I'd maybe start with using chrome dev tools' accessibility tooling and fix some easy gaps if possible - or maybe grab an off the shelf UI component lib that achieves a good balance of flexibility, ease of PoC and hits the accessibility marks to set the UI on a good path going forward.
 
-- What was the most challenging aspect of this work for you (if at all)?
+- Q: What was the most challenging aspect of this work for you (if at all)? A: Definitely navigating the PokeAPI. While I respect that it seems to follow that RESTFul spec to a T, the deep nesting is not a fun one to trial and error 😅
